@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../constants.dart';
 import '../widgets/book_rating.dart';
+import '../widgets/two_side_rounded_button.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -86,6 +87,65 @@ class HomeScreen extends StatelessWidget {
                           score: 4.9,
                         ),
                       ],
+                    ),
+                  ),
+                  Positioned(
+                    top: 160.0,
+                    child: Container(
+                      height: 85.0,
+                      width: 202.0,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(left: 24.0),
+                            child: RichText(
+                              maxLines: 2,
+                              text: TextSpan(
+                                style: TextStyle(
+                                  color: kBlackColor,
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: "Crushing & Influence\n",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: "Gary Venchuk",
+                                    style: TextStyle(
+                                      color: kLightBlackColor,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Spacer(),
+                          Row(
+                            children: [
+                              GestureDetector(
+                                onTap: () {},
+                                child: Container(
+                                  width: 101.0,
+                                  padding: EdgeInsets.symmetric(
+                                    vertical: 10.0,
+                                  ),
+                                  alignment: Alignment.center,
+                                  child: Text("Detail"),
+                                ),
+                              ),
+                              Expanded(
+                                child: TwoSideRoundedButton(
+                                  text: "Read",
+                                  press: () {},
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],
