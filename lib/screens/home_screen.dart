@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ebook/screens/details_screen.dart';
 import 'package:flutter_ebook/widgets/reading_card_list.dart';
 
 import '../constants.dart';
@@ -52,6 +53,13 @@ class HomeScreen extends StatelessWidget {
                           title: 'Crushing & Influence',
                           auth: 'Gary Venchuk',
                           rating: 4.9,
+                          pressDetails: () {
+                            Navigator.push(context, MaterialPageRoute(
+                              builder: (context) {
+                                return DetailsScreen();
+                              },
+                            ));
+                          },
                         ),
                         ReadingListCard(
                           image: 'assets/images/book-2.png',
