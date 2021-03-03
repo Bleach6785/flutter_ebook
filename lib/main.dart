@@ -50,10 +50,11 @@ class WelcomeScreen extends StatelessWidget {
                       text: "flamin",
                     ),
                     TextSpan(
-                        text: "go",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        )),
+                      text: "go",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -65,9 +66,7 @@ class WelcomeScreen extends StatelessWidget {
                   press: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) => HomeScreen(),
-                      ),
+                      MaterialPageRoute(builder: (context) => HomeScreen()),
                     );
                   },
                 ),

@@ -20,13 +20,9 @@ class RoundedButton extends StatelessWidget {
       onTap: press,
       child: Container(
         alignment: Alignment.center,
-        margin: EdgeInsets.symmetric(
-          vertical: 16.0,
-        ),
-        padding: EdgeInsets.symmetric(
-          vertical: verticalPadding,
-          horizontal: 30,
-        ),
+        margin: EdgeInsets.symmetric(vertical: 16.0),
+        padding:
+            EdgeInsets.symmetric(vertical: verticalPadding, horizontal: 30),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(30.0),
